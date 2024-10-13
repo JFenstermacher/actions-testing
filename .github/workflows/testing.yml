@@ -1,0 +1,16 @@
+name: test workflow
+
+on:
+  push:
+
+jobs:
+  setup-go:
+    runs-on: ubuntu-latest
+    steps:
+      - name: first setup
+        uses: actions/setup-go@v5
+      - name: echo version
+        run: go version
+      - uses: actions/setup-go@v5
+      - name: echo version
+        run: go version
