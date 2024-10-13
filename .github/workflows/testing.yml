@@ -9,6 +9,8 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v4
+      - name: checkout again
+        uses: actions/checkout@v4
       - name: first setup
         uses: actions/setup-go@v5
         with:
