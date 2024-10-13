@@ -9,8 +9,12 @@ jobs:
     steps:
       - name: first setup
         uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
       - name: echo version
         run: go version
       - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
       - name: echo version
         run: go version
